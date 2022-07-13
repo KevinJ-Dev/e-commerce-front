@@ -1,7 +1,41 @@
 .Header {
-    height: 50px;
+    height: 80px;
     width: 100%;
     display: flex;
     position: relative;
-    background-color: #61dafb;
+    background-color: #fff;
+    border-bottom: black 1px solid;
+}
+
+#logo-black {
+    height: 82px;
+    width: 77px;
+}
+#NavLogo {
+    margin-left: 5%;
+}
+
+.NavBar {
+    justify-content: center;
+    display: flex;
+    align-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.NavItem {
+    margin-right: 3%;
+    margin-left: 3%;
+    text-align: center;
+    font-max-size: larger;
+}
+.NavItem a {
+    text-decoration: none;
+}
+
+.container-header {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
 }
