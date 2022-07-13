@@ -1,6 +1,6 @@
 import Header from "./Header";
 
-export default function Acceuil() {
+export default function Home() {
     return <div>
         <Header/>
         {/*<Footer/>*/}
