@@ -1,10 +1,10 @@
 import Header from "./Header";
-import Tickets from "./Tickets";
+import StandardCard from "./StandardCard";
 
 export default function Home() {
     return <div>
         <Header/>
         {/*<Footer/>*/}
-        <Tickets/>
+        <StandardCard/>
     </div>;
 }
