@@ -4,10 +4,9 @@ import Card from 'react-bootstrap/Card';
 import {Col, Row} from "react-bootstrap";
 
 
-export default function HomeCard({image}){
+export default function HomeCard({image, title, text}){
     return (
         <Col>
-
         <div className="d-flex justify-content-center">
         <>
             {[
@@ -20,12 +19,11 @@ export default function HomeCard({image}){
                           border='light'>
                     <Card.Img variant="top" src={image} style={{ width: '22rem' }}/>
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>{title}</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            {text}
                         </Card.Text>
-                        <Button variant="dark">Go somewhere</Button>
+                        <Button variant="dark">Acheter</Button>
                     </Card.Body>
                 </Card>
             ))}
