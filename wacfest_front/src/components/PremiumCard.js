@@ -6,6 +6,7 @@ import Standard from "../assets/Standard.png";
 
 export default function PremiumCard(){
     return (
+        <div className="d-flex justify-content-center">
         <>
             {[
                 'Light',
@@ -27,6 +28,7 @@ export default function PremiumCard(){
                 </Card>
             ))}
         </>
+        </div>
     );
 
 }
