@@ -1,4 +1,5 @@
-import '../stylesheets/header.css';
+
+// import '../stylesheets/header.css';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -11,18 +12,17 @@ export default function Header() {
         <Navbar bg="light" variant="light">
             <Container>
                 {/*<Navbar.Brand href="#home">Navbar</Navbar.Brand>*/}
+                <img src={logo}
+                     width="82"
+                     height="82"
+                />
                 <Nav className="me-auto">
-                    <div className="logo">
-                        <img src={logo}
-                             width="82"
-                             height="82"
-                        />
-                    </div>
                     <Nav.Link href="#ticket">Billetterie</Nav.Link>
                     <Nav.Link href="#shop">Boutique</Nav.Link>
                     <Nav.Link href="#program">Programme</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
+
     </div>
 }
