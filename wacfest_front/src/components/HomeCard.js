@@ -1,22 +1,24 @@
 import '../stylesheets/Card.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Premium from '../assets/Premium.png'
-import Standard from "../assets/Standard.png";
+import {Col, Row} from "react-bootstrap";
 
-export default function PremiumCard(){
+
+export default function HomeCard({image}){
     return (
+        <Col>
+
         <div className="d-flex justify-content-center">
         <>
             {[
                 'Light',
             ].map((variant) => (
-                <Card id="card" className="text-center"  bg={variant.toLowerCase()}
-                      key={variant}
-                      text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-                      style={{ width: '22rem' }}
-                        border='light'>
-                    <Card.Img variant="top" src={Premium} style={{ width: '22rem' }}/>
+                <Card id="card" className="text-center" bg={variant.toLowerCase()}
+                          key={variant}
+                          text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
+                          style={{ width: '22rem' }}
+                          border='light'>
+                    <Card.Img variant="top" src={image} style={{ width: '22rem' }}/>
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
@@ -29,6 +31,7 @@ export default function PremiumCard(){
             ))}
         </>
         </div>
+        </Col>
     );
 
 }
