@@ -1,7 +1,23 @@
-.Header {
-    height: 50px;
-    width: 100%;
+/*.Header {*/
+/*    height: 50px;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    position: relative;*/
+/*    background-color: #00ff22;*/
+/*}*/
+
+.me-auto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
     display: flex;
-    position: relative;
-    background-color: #61dafb;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
 }
