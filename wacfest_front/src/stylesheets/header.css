@@ -1,7 +1,19 @@
-.Header {
-    height: 50px;
+.me-auto{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
-    position: relative;
-    background-color: #61dafb;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo{
+    padding-left: 50px;
 }
