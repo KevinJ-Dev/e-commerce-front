@@ -1,5 +1,4 @@
-
-// import '../stylesheets/header.css';
+import '../stylesheets/header.css';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -11,7 +10,6 @@ export default function Header() {
     return <div className="Header">
         <Navbar bg="light" variant="light">
             <Container>
-                {/*<Navbar.Brand href="#home">Navbar</Navbar.Brand>*/}
                 <img src={logo}
                      width="82"
                      height="82"
