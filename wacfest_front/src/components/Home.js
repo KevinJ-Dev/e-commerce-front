@@ -5,6 +5,7 @@ import Standard from "../assets/Standard.png";
 import Prod from  "../assets/polo 1.png"
 import {Container, Row} from "react-bootstrap";
 import ProductsCard from "./Products";
+import Redirect from "./ProdButton";
 
 export default function Home() {
     const titleProd='Polo Homme';
@@ -24,6 +25,8 @@ export default function Home() {
         <Container>
                 <ProductsCard image={Prod} title={titleProd} des={desProd}/>
         </Container>
-
+        <Container>
+            <Redirect/>
+        </Container>
     </div>;
 }
