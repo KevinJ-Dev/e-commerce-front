@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {Col, Row} from "react-bootstrap";
 
-export default function ProductsCard({image}){
+export default function ProductsCard({image, title, des}){
     return(
 
             <div >
@@ -12,13 +12,9 @@ export default function ProductsCard({image}){
                             <Card style={{ width: '22rem' }}>
                                 <Card.Img variant="top" src={image} style={{ width: '20rem' }} />
                                 <Card.Body className="text-center">
-                                    <Card.Title>Card title</Card.Title>
-                                    <Card.Text >
-                                        This is a longer card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                    </Card.Text>
-                                    <Button variant="dark">Go somewhere</Button>
+                                    <Card.Title>{title}</Card.Title>
+                                    <Card.Text>{des}</Card.Text>
+                                    <Button variant="dark">Acheter</Button>
                                 </Card.Body>
                             </Card>
                         </Col>

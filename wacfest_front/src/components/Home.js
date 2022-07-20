@@ -7,7 +7,8 @@ import {Container, Row} from "react-bootstrap";
 import ProductsCard from "./Products";
 
 export default function Home() {
-    const title='Polo Homme';
+    const titleProd='Polo Homme';
+    const desProd = 'S,M,L,XL,XXL';
     return <div>
         <Header/>
         {/*<Footer/>*/}
@@ -21,7 +22,7 @@ export default function Home() {
         </Container>
 
         <Container>
-                <ProductsCard image={Prod}/>
+                <ProductsCard image={Prod} title={titleProd} des={desProd}/>
         </Container>
 
     </div>;
