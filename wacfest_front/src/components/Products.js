@@ -5,7 +5,7 @@ import {Col, Row} from "react-bootstrap";
 export default function ProductsCard({image}){
     return(
 
-            <div className="d-flex justify-content-center">
+            <div >
                 <Row xs={1} md={3} className="g-4">
                     {Array.from({ length: 3 }).map((_, idx) => (
                         <Col>

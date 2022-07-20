@@ -30,7 +30,6 @@ export default function HomeCard({image}){
                 </Card>
             ))}
         </>
-
         </div>
         </Col>
     );
