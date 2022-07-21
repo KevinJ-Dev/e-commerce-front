@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './stylesheets/Button.css';
 import reportWebVitals from './reportWebVitals';
 import Home from "./components/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';

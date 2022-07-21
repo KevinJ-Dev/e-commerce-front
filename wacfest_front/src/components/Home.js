@@ -5,6 +5,7 @@ import Standard from "../assets/Standard.png";
 import Prod from  "../assets/polo 1.png"
 import {Container, Row} from "react-bootstrap";
 import ProductsCard from "./Products";
+import "../stylesheets/home.css";
 
 export default function Home() {
     const titleProd='Polo Homme';
@@ -12,18 +13,21 @@ export default function Home() {
     return <div>
         <Header/>
         {/*<Footer/>*/}
+        <div  className="home-body">
+            <Container >
+                <div>
+                    <Row>
+                        <HomeCard image={Premium} />
+                        <HomeCard image={Standard} />
+                    </Row>
+                </div>
 
-        <Container>
-            <Row>
-                <HomeCard image={Premium} />
-                <HomeCard image={Standard} />
-            </Row>
+            </Container>
 
-        </Container>
-
-        <Container>
-                <ProductsCard image={Prod} title={titleProd} des={desProd}/>
-        </Container>
+            {/*<Container>*/}
+            {/*        <ProductsCard image={Prod} title={titleProd} des={desProd}/>*/}
+            {/*</Container>*/}
+        </div>
 
     </div>;
 }
