@@ -5,7 +5,7 @@ import {Col, Row} from "react-bootstrap";
 export default function ProductsCard({image, title, des}){
     return(
 
-            <div >
+            <div className="p-4" >
                 <Row xs={1} md={3} className="g-4">
                     {Array.from({ length: 3 }).map((_, idx) => (
                         <Col>
