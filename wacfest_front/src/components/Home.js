@@ -5,6 +5,8 @@ import Standard from "../assets/Standard.png";
 import Prod from  "../assets/polo 1.png"
 import {Container, Row} from "react-bootstrap";
 import ProductsCard from "./Products";
+import Config from "bootstrap/js/src/util/config";
+import StripePaymentForm from "./Payment";
 
 export default function Home() {
     const titleProd='Polo Homme';
@@ -25,5 +27,8 @@ export default function Home() {
                 <ProductsCard image={Prod} title={titleProd} des={desProd}/>
         </Container>
 
+        <Container>
+            <StripePaymentForm />
+        </Container>
     </div>;
 }
