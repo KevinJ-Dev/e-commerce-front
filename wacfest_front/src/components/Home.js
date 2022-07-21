@@ -27,8 +27,8 @@ export default function Home() {
                 <ProductsCard image={Prod} title={titleProd} des={desProd}/>
         </Container>
 
-        <Container>
-            <StripePaymentForm />
-        </Container>
+        {/*<Container>*/}
+        {/*    <StripePaymentForm />*/}
+        {/*</Container>*/}
     </div>;
 }
