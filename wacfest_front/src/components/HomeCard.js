@@ -7,7 +7,7 @@ import {Col, Row} from "react-bootstrap";
 export default function HomeCard({image, title, text}){
     return (
         <Col>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex p-4 justify-content-center">
         <>
             {[
                 'Light',
