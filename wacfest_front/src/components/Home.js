@@ -1,5 +1,6 @@
 import Header from "./Header";
 import HomeCard from "./HomeCard";
+import Footer from "./Footer";
 import Premium from '../assets/Premium.png'
 import Standard from "../assets/Standard.png";
 import Prod from  "../assets/polo 1.png"
@@ -24,6 +25,8 @@ export default function Home() {
         <Container>
                 <ProductsCard image={Prod} title={titleProd} des={desProd}/>
         </Container>
+
+        <Footer></Footer>
 
     </div>;
 }
