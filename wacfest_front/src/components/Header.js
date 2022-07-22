@@ -17,9 +17,9 @@ export default function Header() {
                      height="82"
                 />
                 <Nav className="me-auto">
-                    <Nav.Link href="#ticket">Billetterie</Nav.Link>
-                    <Nav.Link href="#shop">Boutique</Nav.Link>
-                    <Nav.Link href="#program">Programme</Nav.Link>
+                    <Nav.Link href="/ticket">Billetterie</Nav.Link>
+                    <Nav.Link href="/shop">Boutique</Nav.Link>
+                    <Nav.Link href="/program">Programme</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
