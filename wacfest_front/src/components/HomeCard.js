@@ -8,24 +8,27 @@ export default function HomeCard({image}){
     return (
         <Col>
 
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center p-2">
         <>
             {[
-                'Light',
+                'dark',
             ].map((variant) => (
                 <Card id="card" className="text-center" bg={variant.toLowerCase()}
                           key={variant}
                           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-                          style={{ width: '22rem' }}
-                          border='light'>
-                    <Card.Img variant="top" src={image} style={{ width: '22rem' }}/>
+                          style={{width: '30rem'}}
+                          border={variant.toLowerCase()}>
+                    <Card.Img variant="top" src={image} style={{ width: '100%' }}/>
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                        <Button variant="dark">Go somewhere</Button>
+                        {/*<Card.Title>Card Title</Card.Title>*/}
+                        {/*<Card.Text>*/}
+                        {/*    Some quick example text to build on the card title and make up the*/}
+                        {/*    bulk of the card's content.*/}
+                        {/*</Card.Text>*/}
+                        {/*/!*<Button className="dinamic-btn">Go somewhere</Button>*!/*/}
+                        <div className="text-center">
+                            <a className="dinamic-btn card-btn"><span className={'dinamic-span'}>Buy</span></a>
+                        </div>
                     </Card.Body>
                 </Card>
             ))}
