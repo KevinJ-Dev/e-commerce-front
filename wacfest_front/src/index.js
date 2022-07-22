@@ -5,13 +5,13 @@ import './stylesheets/Button.css';
 import reportWebVitals from './reportWebVitals';
 import Home from "./components/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    {/*<App />*/}
-      <Home/>
+    <App />
   </React.StrictMode>
 );
 

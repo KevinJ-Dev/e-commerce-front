@@ -1,4 +1,3 @@
-import Header from "./Header";
 import HomeCard from "./HomeCard";
 import Premium from '../assets/Premium.png'
 import Standard from "../assets/Standard.png";
@@ -11,8 +10,6 @@ export default function Home() {
     const titleProd='Polo Homme';
     const desProd = 'S,M,L,XL,XXL';
     return <div>
-        <Header/>
-        {/*<Footer/>*/}
         <div  className="home-body">
             <Container >
                 <div>
