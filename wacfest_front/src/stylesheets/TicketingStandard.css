@@ -1,0 +1,40 @@
+.container-bloc{
+    /*padding: 0 2rem;*/
+    /*padding: 225px 100px;*/
+}
+
+.container-bg-blue-standard{
+    background-color: #43B4E7;
+    margin: 0;
+    padding: 100px;
+}
+
+.container-img{
+    float: left;
+    margin: 70px;
+}
+
+.bloc-info{
+    font-size: 24px;
+    color: #ffffff;
+    /*font-weight: bold;*/
+}
+
+/*.title-passe{*/
+/*    background-color: #FFCA2D;*/
+/*    margin: 0px 50px 0px 40rem;*/
+/*}*/
+
+.stay{
+    margin: 20px 0px 10px 0px;
+}
+
+.place{
+    font-size: 18px;
+    color: #FFCA2D;
+    font-weight: bold;
+}
+
+.info-ticketing{
+    /*background-color: red;*/
+}

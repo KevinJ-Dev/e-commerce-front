@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Ticketing from "./components/Ticketing";
+import TicketingStandard from "./components/TicketingStandard";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
               <Routes>
                   <Route exact path="/" element={<Home/>}/>
                   <Route path="/ticket" element={<Ticketing/>}/>
+                  <Route path="/ticket/standard" element={<TicketingStandard/>}/>
               </Routes>
 
               <Footer/>
