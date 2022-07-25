@@ -2,9 +2,23 @@ import '../stylesheets/Card.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {Col, Row} from "react-bootstrap";
+import { useForm } from "react-hook-form";
+import FormValidate from "./FormPay";
+import {Link, Routes, Route, useNavigate} from 'react-router-dom';
+
+
 
 
 export default function HomeCard({image}){
+
+    /* for redirect */
+    const navigate = useNavigate();
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        navigate('/ticket/standard');
+    };
+
     return (
         <Col>
         <div className="d-flex justify-content-center p-2">
