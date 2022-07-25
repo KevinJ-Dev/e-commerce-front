@@ -21,7 +21,6 @@ export default function FormValidate(){
         {/* errors will return when field validation fails  */}
         {errors.name && <span>Ce champ doit ếtre rempli </span>}
         <input {...register('email')} type="email" placeholder="Email" />
-
         <Button type="submit"  variant='dark'/>
     </form>
     </FormGroup>

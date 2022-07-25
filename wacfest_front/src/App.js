@@ -16,7 +16,8 @@ function App() {
               <Routes>
                   <Route exact path="/" element={<Home/>}/>
                   <Route path="/ticket" element={<Ticketing/>}/>
-                  <Route path="/ticket" element={<FormValidate/>}/>
+                  <Route path="/ticket/standard/payment" element={<FormValidate/>}/>
+                  <Route path="/ticket/premium/payment" element={<FormValidate/>}/>
               </Routes>
 
               <Footer/>
