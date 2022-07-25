@@ -2,9 +2,15 @@ import '../stylesheets/Card.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {Col, Row} from "react-bootstrap";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+
+
 
 
 export default function HomeCard({image}){
+
+
     return (
         <Col>
 
@@ -27,7 +33,7 @@ export default function HomeCard({image}){
                         {/*</Card.Text>*/}
                         {/*/!*<Button className="dinamic-btn">Go somewhere</Button>*!/*/}
                         <div className="text-center">
-                            <a className="dinamic-btn card-btn"><span className={'dinamic-span'}>Buy</span></a>
+                            <a className="dinamic-btn card-btn"  ><span className={'dinamic-span'}>Buy</span></a>
                         </div>
                     </Card.Body>
                 </Card>
