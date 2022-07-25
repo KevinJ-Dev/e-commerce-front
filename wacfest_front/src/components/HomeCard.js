@@ -10,14 +10,14 @@ import {Link, Routes, Route, useNavigate} from 'react-router-dom';
 
 
 export default function HomeCard({image}){
+
+    /* for redirect */
     const navigate = useNavigate();
 
     const handleSubmit = event => {
         event.preventDefault();
         navigate('/ticket');
     };
-    const onSubmit = data => console.log('click');
-
 
     return (
         <Col>
