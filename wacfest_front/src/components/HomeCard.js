@@ -16,7 +16,7 @@ export default function HomeCard({image}){
 
     const handleSubmit = event => {
         event.preventDefault();
-        navigate('/ticket');
+        navigate('/ticket/standard');
     };
 
     return (
