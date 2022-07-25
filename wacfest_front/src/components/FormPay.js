@@ -16,7 +16,6 @@ export default function FormValidate(){
     <form onSubmit={handleSubmit(onSubmit)}>
         {/* register your input into the hook by invoking the "register" function */}
         <input  defaultValue="lastname" {...register("example")} placeholder="Nom"/>
-
         {/* include validation with required or other standard HTML validation rules */}
         <input {...register("name", { required: true })} placeholder="Prénom" />
         {/* errors will return when field validation fails  */}

@@ -3,18 +3,26 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {Col, Row} from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import FormValidate from "./FormPay";
+import {Link, Routes, Route, useNavigate} from 'react-router-dom';
 
 
 
 
 export default function HomeCard({image}){
+    const navigate = useNavigate();
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        navigate('/ticket');
+    };
+    const onSubmit = data => console.log('click');
 
 
     return (
         <Col>
 
-        <div className="d-flex justify-content-center p-2">
+        <div onSubmit={handleSubmit} className="d-flex justify-content-center p-2">
         <>
             {[
                 'dark',
@@ -33,7 +41,7 @@ export default function HomeCard({image}){
                         {/*</Card.Text>*/}
                         {/*/!*<Button className="dinamic-btn">Go somewhere</Button>*!/*/}
                         <div className="text-center">
-                            <a className="dinamic-btn card-btn"  ><span className={'dinamic-span'}>Buy</span></a>
+                            <a className="dinamic-btn card-btn" onSubmit={handleSubmit} type="submit"  ><span className={'dinamic-span'}>Buy</span></a>
                         </div>
                     </Card.Body>
                 </Card>
