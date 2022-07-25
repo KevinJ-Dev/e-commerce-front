@@ -7,12 +7,8 @@ import {Col, Row} from "react-bootstrap";
 export default function HomeCard({image}){
     return (
         <Col>
-
         <div className="d-flex justify-content-center p-2">
-        <>
-            {[
-                'dark',
-            ].map((variant) => (
+        <>{['dark',].map((variant) => (
                 <Card id="card" className="text-center" bg={variant.toLowerCase()}
                           key={variant}
                           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
@@ -27,7 +23,7 @@ export default function HomeCard({image}){
                         {/*</Card.Text>*/}
                         {/*/!*<Button className="dinamic-btn">Go somewhere</Button>*!/*/}
                         <div className="text-center">
-                            <a className="dinamic-btn card-btn"><span className={'dinamic-span'}>Buy</span></a>
+                            <a className="dinamic-btn card-btn"><span className={'dinamic-span'}>Acheter</span></a>
                         </div>
                     </Card.Body>
                 </Card>
@@ -36,5 +32,4 @@ export default function HomeCard({image}){
         </div>
         </Col>
     );
-
 }

@@ -19,7 +19,7 @@ export default function TicketingPremium(){
                 <p className="info bloc-info">Infos pratiques <br/>Vendredi 26 aout - Dimanche 28 aout</p>
                 <p className="place-premium">Rennes, France</p>
                 <p className="price bloc-info">Prix 80,00€</p>
-                <Button variant="danger btn-passe">ACHETER</Button>{' '}
+                <Button href="/ticket/premium/payment" variant="danger btn-passe">ACHETER</Button>{' '}
                 {/*<img src={standard}/>*/}
             </div>
         </div>

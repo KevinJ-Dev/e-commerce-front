@@ -15,17 +15,15 @@ export default function Home() {
             <Container >
                 <div>
                     <Row>
-                        <HomeCard image={Premium} />
                         <HomeCard image={Standard} />
+                        <HomeCard image={Premium} />
                     </Row>
                 </div>
-
             </Container>
 
             {/*<Container>*/}
             {/*        <ProductsCard image={Prod} title={titleProd} des={desProd}/>*/}
             {/*</Container>*/}
         </div>
-
     </div>;
 }

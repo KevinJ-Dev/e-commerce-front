@@ -14,12 +14,8 @@ export default function Header() {
     return <div className="Header">
         <Navbar bg="light" variant="light">
             <Container>
-                {/*<Navbar.Brand href="#home">Navbar</Navbar.Brand>*/}
-                <img src={logo}
-                     width="82"
-                     height="82" onClick={() => {
-                            navigate('/');
-                     }}/>
+                <img src={logo} width="82" height="82" onClick={() => {
+                         navigate('/');}}/>
 
                 <Nav className="me-auto">
                     <Nav.Link href="/ticket">Billetterie</Nav.Link>
