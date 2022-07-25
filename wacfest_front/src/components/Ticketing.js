@@ -1,4 +1,5 @@
 import '../stylesheets/Ticketing.css';
+// import '../stylesheets/Button.css';
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -17,6 +18,9 @@ export default function Ticketing(){
             <p className="title-passe">W@CFEST ETE 2022</p>
             <p className="date-passe">26 au 28 aout</p>
             <Button variant="danger btn-passe">VOIR PLUS</Button>{' '}
+            {/*<div className="text-center">*/}
+            {/*    <a className="dinamic-btn card-btn"><span className={'dinamic-span'}>Buy</span></a>*/}
+            {/*</div>*/}
             {/*<img src={standard}/>*/}
         </div>
 
