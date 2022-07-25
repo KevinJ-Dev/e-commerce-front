@@ -20,7 +20,7 @@ export default function TicketingStandard(){
                 <p className="info bloc-info">Infos pratiques <br/>Vendredi 26 aout - Dimanche 28 aout</p>
                 <p className="place">Rennes, France</p>
                 <p className="price bloc-info">Prix 30,00€</p>
-                <Button variant="danger btn-passe">ACHETER</Button>{' '}
+                <Button href="/ticket/standard/payment" variant="danger btn-passe">ACHETER</Button>{' '}
                 {/*<img src={standard}/>*/}
             </div>
         </div>

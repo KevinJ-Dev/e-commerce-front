@@ -16,7 +16,7 @@ export default function Ticketing(){
             </div>
             <p className="title-passe">W@CFEST ETE 2022</p>
             <p className="date-passe">26 au 28 aout</p>
-            <Button variant="danger btn-passe">VOIR PLUS</Button>{' '}
+            <Button href="/ticket/standard" variant="danger btn-passe">VOIR PLUS</Button>{' '}
             {/*<img src={standard}/>*/}
         </div>
 
@@ -28,7 +28,7 @@ export default function Ticketing(){
             </div>
             <p className="title-passe">W@CFEST ETE 2022</p>
             <p className="date-passe">26 au 28 aout</p>
-            <Button variant="danger btn-passe">VOIR PLUS</Button>{' '}
+            <Button href="/ticket/premium" variant="danger btn-passe">VOIR PLUS</Button>{' '}
                 {/*<img src={premium}/>*/}
         </div>
     </div>
