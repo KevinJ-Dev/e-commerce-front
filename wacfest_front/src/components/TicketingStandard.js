@@ -6,6 +6,8 @@ import Card from 'react-bootstrap/Card';
 import standard from '../assets/Standard.png';
 // import premium from '../assets/Premium.png';
 
+import Form from 'react-bootstrap/Form';
+
 export default function TicketingStandard(){
     return <div className="container-bloc">
         <div className="container-bg-blue-standard container-text">
@@ -22,6 +24,34 @@ export default function TicketingStandard(){
                 <p className="price bloc-info">Prix 30,00€</p>
                 <Button href="/ticket/standard/payment" variant="danger btn-passe">ACHETER</Button>{' '}
                 {/*<img src={standard}/>*/}
+
+                <Form className="date-select">
+                    {['radio'].map((type) => (
+                        <div key={`inline-${type}`} className="mb-3">
+                            <Form.Check
+                                inline
+                                label="Vendredi"
+                                name="date"
+                                type={type}
+                                id={`inline-${type}-1`}
+                            />
+                            <Form.Check
+                                inline
+                                label="Samedi"
+                                name="date"
+                                type={type}
+                                id={`inline-${type}-2`}
+                            />
+                            <Form.Check
+                                inline
+                                label="Dimanche"
+                                name="date"
+                                type={type}
+                                id={`inline-${type}-3`}
+                            />
+                        </div>
+                    ))}
+                </Form>
             </div>
         </div>
     </div>
