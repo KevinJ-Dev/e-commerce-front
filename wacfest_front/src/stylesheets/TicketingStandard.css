@@ -38,3 +38,8 @@
 .info-ticketing{
     /*background-color: red;*/
 }
+
+.date-select{
+    color: white;
+    float: left;
+}
