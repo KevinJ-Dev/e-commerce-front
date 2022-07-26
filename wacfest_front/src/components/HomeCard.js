@@ -13,7 +13,7 @@ export default function HomeCard({image, redirectPath}){
     };
 
     return (
-        <Col className="d-flex p-2 justify-content-between">
+        <Col className="d-flex p-2 justify-content-center">
         <div>
         <>{['dark',].map((variant) => (
                 <Card id="card" className="text-center" bg={variant.toLowerCase()}
