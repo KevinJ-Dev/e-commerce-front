@@ -1,13 +1,13 @@
 import HomeCard from "./HomeCard";
 import Footer from "./Footer";
-import Premium from '../assets/Premium.png'
-import Standard from "../assets/Standard.png";
 import Prod from  "../assets/polo 1.png"
 import {Container, Row} from "react-bootstrap";
 import ProductsCard from "./Products";
 import "../stylesheets/home.css";
 import {useNavigate} from 'react-router-dom';
 import FormValidate from "./FormPay";
+import Premium from '../assets/Premium.png'
+import Standard from "../assets/Standard.png";
 
 
 export default function Home() {
@@ -22,7 +22,8 @@ export default function Home() {
             <Container >
                 <div>
                     <Row>
-                        <HomeCard/>
+                        <HomeCard image={Premium} redirectPath={'/ticket/premium'}/>
+                        <HomeCard image={Standard} redirectPath={'/ticket/standard'}/>
                     </Row>
                 </div>
             </Container>

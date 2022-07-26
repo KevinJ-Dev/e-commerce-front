@@ -8,6 +8,7 @@ import Ticketing from "./components/Ticketing";
 import TicketingStandard from "./components/TicketingStandard";
 import TicketingPremium from "./components/TicketingPremium";
 import FormValidate from "./components/FormPay";
+import LineUp from "./components/LineUp";
 
 function App() {
   return (
@@ -21,11 +22,11 @@ function App() {
                   <Route path="/ticket/premium/payment" element={<FormValidate/>}/>
                   <Route path="/ticket/standard" element={<TicketingStandard/>}/>
                   <Route path="/ticket/premium" element={<TicketingPremium/>}/>
+                  <Route path="/program" element={<LineUp/>}/>
               </Routes>
 
               <Footer/>
           </Router>
   );
 }
-
 export default App;
