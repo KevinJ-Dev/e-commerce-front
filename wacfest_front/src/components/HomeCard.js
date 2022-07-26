@@ -5,7 +5,6 @@ import {Col, Row} from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import FormValidate from "./FormPay";
 import {Link, Routes, Route, useNavigate} from 'react-router-dom';
-import {useNavigate} from 'react-router-dom';
 import Premium from '../assets/Premium.png'
 import Standard from "../assets/Standard.png";
 
