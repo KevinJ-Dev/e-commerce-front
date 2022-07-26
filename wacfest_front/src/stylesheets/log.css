@@ -1,0 +1,12 @@
+.App{
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.App input{
+    margin-bottom: 20px;
+}
+
+.App .form-group label{
+    margin-bottom: 6px;
+}
