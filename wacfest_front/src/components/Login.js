@@ -21,7 +21,7 @@ export default function Login(){
         }
 
         if (!password.match(/^[a-zA-Z]{8,22}$/)) {
-        formIsValid = false;é
+        formIsValid = false;
         setpasswordError(
             "Uniquement des lettres, la longueur doit être au mieux de 8 caractères minimum et de 22 caractères maximum"
         );
