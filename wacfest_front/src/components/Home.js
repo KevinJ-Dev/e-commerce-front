@@ -6,18 +6,23 @@ import Prod from  "../assets/polo 1.png"
 import {Container, Row} from "react-bootstrap";
 import ProductsCard from "./Products";
 import "../stylesheets/home.css";
+import {useNavigate} from 'react-router-dom';
 import FormValidate from "./FormPay";
+
 
 export default function Home() {
     const titleProd='Polo Homme';
     const desProd = 'S,M,L,XL,XXL';
+    const navigate = useNavigate();
+    const navigateToPass = () => {
+    navigate('/PassStandard');
+  };
     return <div>
         <div  className="home-body">
             <Container >
                 <div>
                     <Row>
-                        <HomeCard image={Standard} />
-                        <HomeCard image={Premium} />
+                        <HomeCard/>
                     </Row>
                 </div>
             </Container>
