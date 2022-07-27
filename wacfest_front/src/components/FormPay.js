@@ -2,17 +2,13 @@ import React, {useState} from "react";
 import {useForm} from "react-hook-form";
 import Button from "react-bootstrap/Button";
 import {FormGroup, FormText} from "react-bootstrap";
-import AlertValidate from "./AlertValidate";
-import data from "bootstrap/js/src/dom/data";
+
 
 export default function FormValidate(){
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
 
-    const handleClick = (e) => {
-        e.preventDefault();
-        console.log('The link was clicked.');
-    }
+
     return(
 
     <FormGroup className="form-control-lg">
@@ -30,7 +26,7 @@ export default function FormValidate(){
             {/* errors will return when field validation fails  */}
             {errors.email && <span>Ce champ doit ếtre rempli </span>}
 
-            <Button type="submit" variant='dark' onClick={() => alert('Succés')}>Envoyer</Button>
+            <Button type="submit" variant='dark' onClick={() => alert('Succés')} >Envoyer</Button>
         </form>
     </FormGroup>
     );
