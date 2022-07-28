@@ -9,10 +9,14 @@
     padding: 15px 100px;
     /*z-index: 10;*/
 
-    background-color: #003cff;
+    /*background-color: #003cff;*/
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+}
+
+.container{
+    padding: 0px 0px 0px 40px;
 }
 
 /*.logo{*/
