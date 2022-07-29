@@ -13,10 +13,7 @@ import Standard from "../assets/Standard.png";
 export default function Home() {
     const titleProd='Polo Homme';
     const desProd = 'S,M,L,XL,XXL';
-    const navigate = useNavigate();
-    const navigateToPass = () => {
-    navigate('/PassStandard');
-  };
+
     return <div>
         <div  className="home-body">
             <Container >

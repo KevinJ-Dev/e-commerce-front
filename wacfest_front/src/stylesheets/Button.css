@@ -1,5 +1,5 @@
 
-.dinamic-btn {
+.dynamic-btn {
     display: inline-block;
     text-decoration: none;
     width: 100%;
@@ -7,16 +7,14 @@
     text-align: center;
 }
 
-.dinamic-span {
-    display: inline-block;
+.dynamic-span {
+    /*display: inline-block;*/
     /*display: flex;*/
     justify-content: center;
     width: 100%;
     height: 40px;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 25px;
     border: none;
     padding: 0;
     background: #137dc1;
@@ -30,7 +28,7 @@
             transform 0.15s ease-out,
             background-color 0.15s ease-out;
 }
-.dinamic-span:hover {
+.dynamic-span:hover {
     transform: translate(-6px, -6px);
     color: #fff;
     background: #faa91a;

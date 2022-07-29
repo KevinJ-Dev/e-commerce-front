@@ -24,7 +24,7 @@ export default function HomeCard({image, redirectPath}){
                     <Card.Img variant="top" src={image} style={{ width: '100%' }}/>
                     <Card.Body>
                         <div className="text-center">
-                            <a onClick={() => navigateTo(redirectPath)} className="dinamic-btn card-btn"><span className={'dinamic-span'}>Acheter</span></a>
+                            <a onClick={() => navigateTo(redirectPath)} className="dynamic-btn card-btn"><span className={'dynamic-span'}>Acheter</span></a>
                         </div>
                     </Card.Body>
                 </Card>
