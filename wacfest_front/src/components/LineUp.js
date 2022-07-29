@@ -76,7 +76,7 @@ export default function LineUp() {
                                 return (
                                     <Col md={6} className={'row-card'}>
                                         <Card className={'rounded-0 m-1'} bg={"none"}>
-                                            <Card.Img className={'rounded-0 card-img-top'}
+                                            <Card.Img className={'rounded-0 img-lineup'}
                                                       onMouseEnter={() => changeArtistes(index,true)}
                                                       onMouseLeave={() => changeArtistes(index,false)}
                                                       src={artiste.img}

@@ -19,7 +19,7 @@
     overflow: hidden;
 }
 
-.card-img-top {
+.img-lineup {
     width: auto;
     height: 500px;
     object-fit: cover;
