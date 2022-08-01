@@ -1,0 +1,17 @@
+.container-bg-black{
+    background-color: #232323;
+}
+
+.bg-img{
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
+.text-info-slide{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    background-color: #FFCA2D;
+}

@@ -1,4 +1,5 @@
 import HomeCard from "./HomeCard";
+import HomeSlide from "./HomeSlide";
 import Footer from "./Footer";
 import Prod from  "../assets/polo 1.png"
 import {Container, Row} from "react-bootstrap";
@@ -19,6 +20,8 @@ export default function Home() {
   };
     return <div>
         <div  className="home-body">
+                <HomeSlide></HomeSlide>
+
             <Container >
                 <div>
                     <Row>
