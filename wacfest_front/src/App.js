@@ -10,6 +10,7 @@ import TicketingPremium from "./components/TicketingPremium";
 import FormValidate from "./components/FormPay";
 import LineUp from "./components/LineUp";
 import Register from "./components/Register";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                   <Route path="/ticket/standard" element={<TicketingStandard/>}/>
                   <Route path="/ticket/premium" element={<TicketingPremium/>}/>
                   <Route path="/program" element={<LineUp/>}/>
+                  <Route path="/login" element={<Login/>}/>
                   <Route path="/register" element={<Register/>}/>
               </Routes>
 
