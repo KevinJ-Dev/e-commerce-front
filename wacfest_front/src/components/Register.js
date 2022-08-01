@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import '../stylesheets/log.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from 'react-router-dom';
 
 export default function Register(){
     const [password, setPassword] = useState("");
@@ -97,9 +98,12 @@ export default function Register(){
                                     {passwordError}
                                 </small>
                             </div>
-                            <button type="submit" className="btn btn-primary">
-                                Se connecter
-                            </button>
+
+                            <Link to="/register">
+                                <button type="submit" className="btn btn-primary">
+                                    Se connecter
+                                </button>
+                            </Link>
                         </form>
                     </div>
                 </div>

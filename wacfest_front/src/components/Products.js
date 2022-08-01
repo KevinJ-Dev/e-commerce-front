@@ -14,7 +14,9 @@ export default function ProductsCard({image, title, des}){
                                 <Card.Body className="text-center">
                                     <Card.Title>{title}</Card.Title>
                                     <Card.Text>{des}</Card.Text>
-                                    <Button variant="dark">Acheter</Button>
+                                    <Link to="/add/{id}">
+                                        <Button variant="dark" type ="button">Acheter</Button>
+                                    </Link>
                                 </Card.Body>
                             </Card>
                         </Col>
