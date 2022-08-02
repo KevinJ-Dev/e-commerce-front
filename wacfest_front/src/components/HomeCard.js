@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import FormValidate from "./FormPay";
 import {useNavigate} from 'react-router-dom';
 
+import test from "./test.json";
+
 
 export default function HomeCard({image, redirectPath}){
     const navigate = useNavigate();
@@ -24,7 +26,16 @@ export default function HomeCard({image, redirectPath}){
                     <Card.Img variant="top" src={image} style={{ width: '100%' }}/>
                     <Card.Body>
                         <div className="text-center">
-                            <a onClick={() => navigateTo(redirectPath)} className="dinamic-btn card-btn"><span className={'dinamic-span'}>Acheter</span></a>
+                            <a onClick={() => navigateTo(redirectPath)}><span className={'dinamic-span'}>Acheter</span>
+
+                                {/*{*/}
+                                {/*    test.map(data => {*/}
+                                {/*        return(*/}
+                                {/*            <button>{data.standard}</button>*/}
+                                {/*        )*/}
+                                {/*    })*/}
+                                {/*}*/}
+                            </a>
                         </div>
                     </Card.Body>
                 </Card>

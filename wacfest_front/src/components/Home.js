@@ -10,23 +10,23 @@ import FormValidate from "./FormPay";
 import Premium from '../assets/Premium.png'
 import Standard from "../assets/Standard.png";
 
+import test from "./test.json";
 
 export default function Home() {
     const titleProd='Polo Homme';
     const desProd = 'S,M,L,XL,XXL';
     const navigate = useNavigate();
     const navigateToPass = () => {
-    navigate('/PassStandard');
   };
     return <div>
         <div  className="home-body">
-                <HomeSlide></HomeSlide>
+                {/*<HomeSlide></HomeSlide>*/}
 
             <Container >
                 <div>
                     <Row>
-                        <HomeCard image={Premium} redirectPath={'/ticket/premium'}/>
                         <HomeCard image={Standard} redirectPath={'/ticket/standard'}/>
+                        <HomeCard image={Premium} redirectPath={'/ticket/premium'}/>
                     </Row>
                 </div>
             </Container>
