@@ -7,6 +7,7 @@ import standard from '../assets/Standard.png';
 // import premium from '../assets/Premium.png';
 
 import Form from 'react-bootstrap/Form';
+import Datajson from "../DataJson.json";
 
 export default function TicketingStandard(){
     return <div className="container-bloc">
@@ -17,11 +18,17 @@ export default function TicketingStandard(){
                 </Card>
             </div>
             <div className="info-ticketing">
-                <h1 className="title-passe">W@CFEST PASSE STANDARD</h1>
-                <p className="stay bloc-info">1 séjour au W@CFEST</p>
-                <p className="info bloc-info">Infos pratiques <br/>Vendredi 26 aout - Dimanche 28 aout</p>
-                <p className="place">Rennes, France</p>
-                <p className="price bloc-info">Prix 30,00€</p>
+                {
+                    Datajson.map(data => {
+                        return(
+                            <div>
+                                <p >{data.type[0]}</p>
+                                <p>{data.details[0]}</p>
+                                <p>{data.price[0]} euros </p>
+                            </div>
+                        )
+                    })
+                }
                 <Button href="/ticket/standard/payment" variant="danger btn-passe">ACHETER</Button>{' '}
                 {/*<img src={standard}/>*/}
 

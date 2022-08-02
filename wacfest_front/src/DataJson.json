@@ -1,0 +1,27 @@
+
+
+[
+    {
+        "id" :[
+            1,
+            2
+        ],
+        "price": [
+            35,
+            80
+        ],
+        "type":[
+            "Standard",
+            "Premium"
+        ],
+        "image": [
+            "../assets/Standard.png",
+            "../assets/Premium.png"
+        ],
+        "details":[
+            "Pass journée",
+            "Pass 3 jours"
+        ],
+        "stock": 250
+    }
+]
