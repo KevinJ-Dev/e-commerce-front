@@ -14,6 +14,10 @@
             "Standard",
             "Premium"
         ],
+        "date": [
+            "26, 27, ou 28 août",
+            "26 au 28 août"
+        ],
         "image": [
             "../assets/Standard.png",
             "../assets/Premium.png"
