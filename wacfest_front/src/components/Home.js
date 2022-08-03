@@ -10,7 +10,9 @@ import FormValidate from "./FormPay";
 import Premium from '../assets/Premium.png'
 import Standard from "../assets/Standard.png";
 
-import test from "./test.json";
+import TicketetButton from "./TicketButton";
+
+import test from "./DataJson.json";
 
 export default function Home() {
     const titleProd='Polo Homme';
@@ -20,11 +22,12 @@ export default function Home() {
   };
     return <div>
         <div  className="home-body">
-                {/*<HomeSlide></HomeSlide>*/}
+                <HomeSlide/>
 
             <Container >
                 <div>
                     <Row>
+                        <TicketetButton {'/ticket/standard'}/>
                         <HomeCard image={Standard} redirectPath={'/ticket/standard'}/>
                         <HomeCard image={Premium} redirectPath={'/ticket/premium'}/>
                     </Row>

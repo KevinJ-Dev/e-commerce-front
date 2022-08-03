@@ -5,8 +5,8 @@ import { useForm } from "react-hook-form";
 import FormValidate from "./FormPay";
 import {useNavigate} from 'react-router-dom';
 
-import test from "./test.json";
-
+import TicketButton from "../components/TicketButton";
+import test from "./DataJson.json";
 
 export default function HomeCard({image, redirectPath}){
     const navigate = useNavigate();
@@ -24,20 +24,14 @@ export default function HomeCard({image, redirectPath}){
                           style={{width: '30rem'}}
                           border={variant.toLowerCase()}>
                     <Card.Img variant="top" src={image} style={{ width: '100%' }}/>
-                    <Card.Body>
-                        <div className="text-center">
-                            <a onClick={() => navigateTo(redirectPath)}><span className={'dinamic-span'}>Acheter</span>
+                    <TicketButton/>
 
-                                {/*{*/}
-                                {/*    test.map(data => {*/}
-                                {/*        return(*/}
-                                {/*            <button>{data.standard}</button>*/}
-                                {/*        )*/}
-                                {/*    })*/}
-                                {/*}*/}
-                            </a>
-                        </div>
-                    </Card.Body>
+                    {/*<Card.Body>*/}
+                    {/*    <div className="text-center">*/}
+                    {/*        <a onClick={() => navigateTo(redirectPath)}><span className={'dinamic-span'}>Acheter</span>*/}
+                    {/*        </a>*/}
+                    {/*    </div>*/}
+                    {/*</Card.Body>*/}
                 </Card>
             ))}
         </>

@@ -1,0 +1,20 @@
+[
+  {
+    "id" : 1,
+    "price": 30,
+    "type": "Standard",
+    "date": "26, 27, ou 28 août",
+    "image": "./assets/Standard.png",
+    "details": "Pass journée",
+    "stock": 250
+  },
+  {
+    "id" : 2,
+    "price": 80,
+    "type": "premium",
+    "date": "26, 27 & 28 août",
+    "image": "./assets/Premium.png",
+    "details": "Pass 3 jours",
+    "stock": 250
+  }
+]
